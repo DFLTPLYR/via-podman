@@ -55,3 +55,13 @@ You can find it at [https://github.com/cebby2420/via-desktop](https://github.com
 If you encounter any issues or bugs while using the [VIA web application](https://usevia.app), please report them by opening an issue in the [Issues section](https://github.com/the-via/app/issues). This will help us to track down and resolve problems, and improve the VIA experience for everyone.
 
 Before reporting, please make sure to check if an issue has already been reported. Thank you!
+
+## Just added a dockerfile to run on a container so when youre in linux and no internet you can run it on browser locally in a container
+
+#### `podman build -t via-app .`
+
+#### `podman run --name via-podman -p 5173:5173 via-app:latest`
+**or any name for the via-podman**
+
+### `podman start via-podman`
+**or the name for the fuck-ass container**
